@@ -128,11 +128,11 @@ function renderEvents() {
             <strong>${event.date}</strong>
             <span>${event.day}</span>
           </div>
-          <div>
+          <div class="event-card-body">
             <h3>${event.title}</h3>
             <p>${event.description}</p>
-            <a href="${whatsappUrl(event.message)}" target="_blank" rel="noreferrer">Chamar no WhatsApp</a>
           </div>
+          <a class="event-card-cta" href="${whatsappUrl(event.message)}" target="_blank" rel="noreferrer">Chamar no WhatsApp</a>
         </article>
       `
     )

@@ -460,11 +460,11 @@ h1 span {
 .event-card {
   position: relative;
   min-height: 330px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 18px;
   overflow: hidden;
-  padding: 22px;
+  padding: 26px;
   background:
     linear-gradient(160deg, rgba(0,0,0,.65), rgba(0,0,0,.94)),
     var(--poster-bg);
@@ -496,7 +496,7 @@ h1 span {
 }
 
 .event-card h3 {
-  margin: 50px 0 8px;
+  margin: 0 0 8px;
   color: var(--event-color);
   font-family: "Sedgwick Ave Display", "Bebas Neue", cursive;
   font-size: 42px;
@@ -510,14 +510,25 @@ h1 span {
   font-weight: 700;
 }
 
-.event-card a {
-  width: 100%;
+.event-card-body {
+  align-self: end;
+}
+
+.event-card-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 16px);
+  min-height: 44px;
+  margin: 0 8px 0;
   background: rgba(224, 7, 7, 0.9);
   color: #fff;
-  padding: 12px;
+  padding: 12px 14px;
   text-align: center;
   font-weight: 900;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
 .tickets-section {
@@ -537,14 +548,6 @@ h1 span {
   background-size: cover;
   background-position: center;
   padding-inline: max(clamp(18px, 4vw, 38px), calc((100vw - var(--max)) / 2 + 38px));
-}
-
-.tickets-copy span {
-  display: block;
-  color: #ddd4cc;
-  font-size: 18px;
-  line-height: 1.45;
-  max-width: 440px;
 }
 
 .tickets-copy {
