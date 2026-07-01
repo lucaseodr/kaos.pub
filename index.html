@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KAOS Pub - Não é gourmet. É KAOS.</title>
+    <meta
+      name="description"
+      content="KAOS Pub em Uberlândia-MG. Música, eventos, lutas, karaoke e ingressos direto pelo WhatsApp."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700;900&family=Sedgwick+Ave+Display&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="KAOS Pub home">
+        <span class="brand-main">KAOS</span>
+        <span class="brand-sub">PUB</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#eventos">Eventos</a>
+        <a href="#ingressos">Ingressos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="whats-link header-cta" data-whatsapp href="#" target="_blank" rel="noreferrer">
+        <span class="whats-icon" aria-hidden="true"></span>
+        Comprar no WhatsApp
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="Menu mobile">
+      <a href="#eventos">Eventos</a>
+      <a href="#ingressos">Ingressos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a class="whats-link" data-whatsapp href="#" target="_blank" rel="noreferrer">Chamar no WhatsApp</a>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="rabbit-stamp" aria-hidden="true">
+            <img src="assets/coelho_logo_recorte.png" alt="">
+          </div>
+          <p class="place-line">Uberlândia - MG / Underground de verdade</p>
+          <h1>Não é gourmet.<span>É KAOS.</span></h1>
+          <p class="hero-copy">
+            Música pesada, karaoke sem pose, noites de luta, mini ramp e eventos para quem prefere
+            o rolê direto, barulhento e sem frescura.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn whats-link" data-whatsapp href="#" target="_blank" rel="noreferrer">
+              Garantir pelo WhatsApp
+            </a>
+            <a class="ghost-btn" href="#eventos">Ver agenda</a>
+          </div>
+          <ul class="hero-tags" aria-label="Destaques do KAOS">
+            <li>Música</li>
+            <li>Lutas de boxe</li>
+            <li>Karaoke</li>
+            <li>Mini ramp</li>
+          </ul>
+        </div>
+        <aside class="event-spotlight" aria-label="Proximo evento">
+          <p>Próximo evento</p>
+          <strong data-featured-date>04/07</strong>
+          <span data-featured-day>Sábado</span>
+          <h2 data-featured-title>KAOS Rock Fight</h2>
+          <small data-featured-meta>Boxe + música</small>
+          <a class="spotlight-btn whats-link" data-whatsapp data-featured-link href="#" target="_blank" rel="noreferrer">
+            Chamar agora
+          </a>
+        </aside>
+      </section>
+
+      <section class="section section-tight" id="eventos">
+        <div class="section-heading">
+          <p>Agenda</p>
+          <h2>Próximos eventos</h2>
+          <a href="#contato">Falar com a casa</a>
+        </div>
+        <div class="event-grid" data-events></div>
+      </section>
+
+      <section class="section tickets-section" id="ingressos">
+        <div class="tickets-copy">
+          <p>Ingressos</p>
+          <h2>Rápido. Direto. No WhatsApp.</h2>
+          <span>
+            Hoje o fluxo segue simples: escolha o evento, chame no WhatsApp e resolva direto com a
+            equipe. Sem fila escondida, sem burocracia e com atendimento humano.
+          </span>
+        </div>
+        <div class="ticket-list" data-tickets></div>
+        <div class="whats-panel">
+          <span class="big-whats" aria-hidden="true"></span>
+          <h3>Compra assistida pela equipe</h3>
+          <p>Sem formulario escondido. A conversa ja abre com evento, tipo de ingresso e quantidade.</p>
+          <a class="primary-btn whats-link" data-whatsapp href="#" target="_blank" rel="noreferrer">Abrir WhatsApp</a>
+        </div>
+      </section>
+
+      <section class="section story-section" id="sobre">
+        <div class="story-title">
+          <p>O que e o</p>
+          <h2>KAOS Pub?</h2>
+        </div>
+        <div class="story-copy">
+          <p>
+            Não somos casa noturna. Somos válvula de escape. Aqui o som é pesado, a liberdade é real
+            e o respeito é lei.
+          </p>
+          <p>
+            Música, lutas, mini ramp e caos na medida certa para quem quer sair do óbvio.
+          </p>
+          <a class="red-link" href="#contato">Como chegar</a>
+        </div>
+        <div class="feature-list" data-features></div>
+      </section>
+
+      <section class="gallery-band" id="galeria">
+        <div class="gallery-title">
+          <p>Galeria</p>
+          <h2>Caos em imagens</h2>
+        </div>
+        <div class="gallery-strip" aria-label="Galeria visual do KAOS">
+          <figure><img src="assets/hero-crowd-red.png" alt="Publico em show com luzes vermelhas"></figure>
+          <figure><div class="poster-art poster-one">Quinta<br>Karaoke</div></figure>
+          <figure><div class="poster-art poster-two">Rock<br>Fight</div></figure>
+          <figure><div class="poster-art poster-three">Noite<br>Sem Pose</div></figure>
+        </div>
+      </section>
+
+      <section class="section info-section" id="contato">
+        <div class="info-card">
+          <span>Endereco</span>
+          <strong>Avenida Cleone Cairo Gomes, 555</strong>
+          <p>Segismundo Pereira, Uberlândia - MG</p>
+        </div>
+        <div class="info-card">
+          <span>Funcionamento</span>
+          <strong>Quinta a domingo</strong>
+          <p>Abertura da casa: 19h. Programacao varia por evento.</p>
+        </div>
+        <div class="info-card">
+          <span>Entrada</span>
+          <strong>Proibido menores</strong>
+          <p>Entrada sujeita a documento e regras da casa.</p>
+        </div>
+        <div class="info-card contact-card">
+          <span>Contato</span>
+          <strong>WhatsApp e Instagram</strong>
+          <p>Atendimento rápido para ingressos, reservas e dúvidas.</p>
+          <div class="contact-actions">
+            <a class="whats-link" data-whatsapp href="#" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a href="https://www.instagram.com/k4os.pub/" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <span class="brand-main">KAOS</span>
+        <span class="brand-sub">PUB</span>
+      </div>
+      <p>O underground, o melhor em ser o pior.</p>
+      <a class="whats-link footer-cta" data-whatsapp href="#" target="_blank" rel="noreferrer">Comprar pelo WhatsApp</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
